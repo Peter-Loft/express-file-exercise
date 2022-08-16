@@ -8,6 +8,7 @@ async function cat(path) {
     let contents = await fsP.readFile(path, "utf8");
     console.log("Contents: ", contents)
   } catch (e) {
+    console.log(e);
     process.exit(1);
   }
 }
